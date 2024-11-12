@@ -1,4 +1,4 @@
-// un contador.js
+// contador.js
 
 // da inicio al contador de visitantes
 let contador = localStorage.getItem('contador');
@@ -30,7 +30,7 @@ mostrarContador();
 
 
 
-// relojito.js
+// reloj.js
 
 function actualizarReloj() {
     // fecha y hora actual
@@ -64,4 +64,26 @@ setInterval(actualizarReloj, 1000);
 
 // invocacion de la función una vez al cargar la página
 actualizarReloj();
+
+
+
+// menu.js
+
+// Selecciona todos los enlaces del menú de navegación
+const enlacesMenu = document.querySelectorAll('nav a');
+
+// Añade un evento de mouseover y mouseout a cada enlace
+enlacesMenu.forEach(enlace => {
+    enlace.addEventListener('mouseover', () => {
+        // Cambia el color del texto y aumenta el tamaño de la fuente
+        enlace.style.color = 'red';
+        enlace.style.fontSize = '1.2em'; // aumenta de tsmsñoo
+    });
+
+    enlace.addEventListener('mouseout', () => {
+        // Vuelve a poner la misma fuente y color original
+        enlace.style.color = 'blue';
+        enlace.style.fontSize = '1em'; // tamaño de origen
+    });
+});
 

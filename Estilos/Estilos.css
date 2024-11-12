@@ -29,6 +29,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
+
 section {
     margin: 20px;
     padding: 20px;
@@ -62,6 +63,28 @@ footer {
     width: 100%;
 }
 
+
+#reloj {
+    position: absolute;
+    top: 10px;  /* Distancia desde la parte superior */
+    right: 10px; /* Distancia desde la parte izquierda */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+#contador {
+    position: absolute;
+    top: 80px; /* distancia desde arribaa */
+    right: 10px; /* pone le contador a la derecha */
+    background-color: rgb(115, 196, 224); /* azul claro */
+    padding: 10px; /* espaciado */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
 p {
     line-height: 1.6; /* textolegible */
     margin: 10px 0; /* Espaciado entre párrafos */
@@ -84,7 +107,7 @@ p {
 
 form {
     margin: 20px 0;
-    background-color: red;
+    background-color: #f1f1f1;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);

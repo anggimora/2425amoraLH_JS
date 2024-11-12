@@ -1,0 +1,105 @@
+<!DOCTYPE html>   <!-- tipo de documento y  versión de HTML -->
+<html lang="es">    <!-- especifica el tipo de documento y versiom-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestras reuniones - Sociedad Gastronómica y Cultural de Texas</title>  <!-- titulo-->
+    <link rel="stylesheet" href="C:\Users\anggi\Desktop\Javascript pagina\estilos\estilos.css">    <!-- para poner hoja estilo aqui-->
+    <link rel="icon" href="Imagenes/favicon.jpeg" type="image/x-icon">    <!-- lo mas divertido, para poner el favicon -->
+    <style>
+        body {     /* estilos para el cuerpo de la pagina */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {    /* los estilos de cabecera */
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        section {   /* los estilos del contenido */
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {   /* el color del titulo */
+            color: #d9534f; 
+        }
+        img {    /* los estilos las imagenes */
+            display: block;
+            margin: 20px auto; 
+            max-width: 100%; 
+            height: auto; 
+        }
+        footer {     /* los estilos del pie */
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #reloj {
+    position: absolute;
+    top: 10px;  /* superior */
+    right: 10px; /* izquierda */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+        p {
+            line-height: 1.6; 
+            margin: 10px 0; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nuestras reuniones</h1>
+        <nav>     <!-- el menu de navegacion -->
+            <ul style="list-style-type: none; padding: 0; text-align: center;">  <!-- Lista desordenada sin estilo y centrada -->
+                <li style="display: inline; margin: 0 15px;">
+                    <a href="Quienes_somos.html" style="color: white; text-decoration: none;">Quiénes somos</a>
+                </li>
+                <li style="display: inline; margin: 0 15px;">
+                    <a href="Instalaciones.html" style="color: white; text-decoration: none;">Instalaciones</a>
+                </li>
+                <li style="display: inline; margin: 0 15px;">
+                    <a href="Nuestras_reuniones.html" style="color: white; text-decoration: none;">Nuestras reuniones</a>
+                </li>
+                <li style="display: inline; margin: 0 15px;">
+                    <a href="Enlaces_de_interes.html" style="color: white; text-decoration: none;">Enlaces de Interés</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="reloj"></div>
+    
+    <section>  <!-- aqui van los contenidos -->
+        <p>
+            Nuestros socios están formados por personas de distintas edades, hemos formado entre todos una gran amistad haciendo de la sociedad nuestro punto de encuentro.
+        </p>
+        <img src="Imagenes/dos hombresbarbacoa.jpeg" alt="Reunion de socios">
+        <img src="Imagenes/reuniongastro.jpeg" alt="Reunión de socios">
+        <button onclick="history.back()" style="margin-top: 20px; padding: 10px 20px; background-color: #d9534f; color: white; border: none; border-radius: 5px; cursor: pointer;">
+            Volver
+        </button>
+    </section>
+
+    <footer>  <!-- pie de pagina -->
+        <p>Teléfono: 666000000 (de 10:00 am a 14:00pm)</p>
+        <p>Email: sgastrotexas@gmail.com</p>
+        <p>Estamos ubicados en: Calle Sulphur Springs, Número 8, Madrid</p>
+        <p>© Amora Design 2024</p>
+    </footer>
+    <script src="Funciones/Funciones.js"></script>
+</body>
+</html>
