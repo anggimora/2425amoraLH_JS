@@ -1,0 +1,160 @@
+/* Estilos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    margin: 10px 0;
+}
+
+nav a {
+    margin: 0 15px;
+    color: red; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: white; 
+}
+
+h2 {
+    color: #d9534f; /* titulos */
+}
+
+img {
+    display: block;
+    margin: 20px auto; /* centra imagenes */
+    max-width: 100%; /* ancho de imagen */
+    height: auto; /* proporciones fotos */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+#reloj {
+    position: absolute;
+    top: 10px;  /* Distancia desde la parte superior */
+    right: 10px; /* Distancia desde la parte izquierda */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+#contador {
+    position: absolute;
+    top: 80px; /* Ajusta la distancia desde la parte superior */
+    right: 10px; /* Mantiene el contador en el borde derecho */
+    background-color: rgb(131, 199, 221); /* Color de fondo azul claro */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+p {
+    line-height: 1.6; /* textolegible */
+    margin: 10px 0; /* Espaciado entre párrafos */
+}
+
+.photo {
+    display: inline-block;
+    width: 30%;
+    margin: 10px 1%;
+    vertical-align: top;
+    text-align: center;
+}
+
+.circular {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover; 
+}
+
+form {
+    margin: 20px 0;
+    background-color: #d9534f;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 2px solid #000; /* Borde negro de 2px */
+    width: 100%; /* Ancho completo */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 100%; /* Hace que los campos de entrada ocupen el 100% del ancho del formulario */
+    padding: 10px; /* Agrega un poco de padding para que se vea mejor */
+    margin: 10px 0; /* Espaciado entre los campos */
+    border: 1px solid #ccc; /* Borde ligero para los campos de entrada */
+    border-radius: 4px; /* Bordes redondeados para los campos de entrada */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+form textarea {
+    resize: none; /* Evita que el usuario pueda cambiar el tamaño del textarea */
+    height: 100px; /* Altura fija para el campo de mensaje */
+}
+
+input, textarea {
+    width: calc(100% - 22px); 
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #d9534f; 
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #c9302c; 
+}
+
+
+
+
+
+
+
+
